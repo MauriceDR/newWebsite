@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Basic Website</title>
   </head>
   <body>
@@ -12,29 +22,28 @@
       <div class="navbar">
         <img src="images/channels4_profile.jpg" alt="" class="logo" />
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Team</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#team">Team</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="containerApp">
+    <div class="container">
       <div class="app">
-        <h1>Container Application</h1>
+        <h1>Welcome, <span class="userID"></span></h1>
         <p class="p1">
-          This is a container app. <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-          Voluptatem amet in cumque perspiciatis at neque possimus harum
-          nesciunt consectetur id quibusdam esse animi, ea, ad tenetur! Possimus
-          sint cupiditate labore!
+          Thank you for signing up for our newsletter. <br />
+          We will contact you once the website is up and running.
         </p>
+        <span class="close">&times;</span>
       </div>
     </div>
 
-    <div class="content">
-      <h1>DESIGN</h1>
+    <div id="home" class="content">
+      <h1>Website Under Construction</h1>
+      <h3>Sign up below for email notifications</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odio
         quae mollitia magni voluptatum illo <br />
@@ -43,11 +52,59 @@
       </p>
       <div>
         <form class="login">
-          <input type="text" placeholder="Username" class="userLogin" />
-          <input type="text" placeholder="Password" class="passLogin" /><br />
-          <button id="loginBtn">ENTER</button>
+          <input type="text" placeholder="Name" class="userLogin" />
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="passLogin"
+          /><br />
+          <button class="login_button">ENTER</button>
         </form>
       </div>
     </div>
+
+    <section id="about" class="about">
+      <h1>About</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        error praesentium expedita, <br />
+        aliquid numquam, quasi magnam vero nostrum veritatis in itaque neque
+        deleniti aliquam molestias, facere enim necessitatibus laudantium
+        cupiditate.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h1>Contact</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        error praesentium expedita, <br />
+        aliquid numquam, quasi magnam vero nostrum veritatis in itaque neque
+        deleniti aliquam molestias, facere enim necessitatibus laudantium
+        cupiditate.
+      </p>
+    </section>
+
+    <section id="team" class="team">
+      <h1>Team</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        error praesentium expedita, <br />
+        aliquid numquam, quasi magnam vero nostrum veritatis in itaque neque
+        deleniti aliquam molestias, facere enim necessitatibus laudantium
+        cupiditate.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <a href="https://facebook.com" class="fa fa-facebook"></a>
+      <a href="https://twitter.com" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+      <p>MauriceDR @ 2022</p>
+      <div class="scrolltop">
+        <a href="#">Scroll Top</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
